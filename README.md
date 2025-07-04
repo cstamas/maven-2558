@@ -26,3 +26,12 @@ $ mvn -V -s settings.xml -Dmaven.repo.local=local package -Dmaven.session.versio
 
 And commons-compress 1.27.1 will be selected due "contextual snapshot filter" (if graph parent is not snapshot,
 child from range cannot be snapshot either).
+
+## Maven 3.9.11
+
+
+```
+$ mvn -V -s settings.xml -Dmaven.repo.local=local package -Dmaven.versionRangeResolutionNature=auto
+```
+
+PR: https://github.com/apache/maven/pull/2574
