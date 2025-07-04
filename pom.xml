@@ -5,15 +5,12 @@
   <groupId>org.apache.maven.reproducer</groupId>
   <artifactId>maven-2558</artifactId>
   <version>0.1.0-SNAPSHOT</version>
-  <packaging>jar</packaging>
+  <packaging>pom</packaging>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.apache.commons</groupId>
-      <artifactId>commons-compress</artifactId>
-      <version>[1.27.1,1.28.0]</version>
-    </dependency>
-  </dependencies>
+  <modules>
+    <module>module1</module>
+    <module>module2</module>
+  </modules>
 
   <repositories>
     <repository>
